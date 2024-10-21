@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngọc Rồng Night</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAuhQTFRFExgcFRkcFhodFxseFhkcFxkcFxkdFxodGhsdGRwdGBsdFhsdFRodFhwfFRgaJyAhJh8bPSocJR0eMCIgUj4jOy0gUkUoOSAcJhocRDQrJR8eMB8eGBocExodIRwfiFQslU0oXy4ciUo1a0UpcU4nb1Qvil4nWzEhiEoztG5SgkYtLx4dGRkbHhwgNyYdsXhIt35PViofnlgxX0cwjWxBhW8/Ylo+jV0utnFC7qE9g1E/WSUbMRwcGBgcSSYeTykhc0MygE4pgWhDkWU/h0AmylUazHEfeWc+p29D0IxRqG45VjEiOBobIBwfUi0keDQfdDokh1MzoXFFt0waYjImRxshdiAbqlwjfVIuflYuf0gkYSUeHBgbIBgbZjgrw3dJk00rvYJFl1sxnU8vQBkhfFQ6lDkbki4fr4xSg1QvmUUpZT0rOCYiIRgbk1w12qNPuGk3wm0ndD8rUS8nlFk/jjEify0mTSgluYJEtW8wlVQqZkAkYD0tIRcZXy0dY0Uvd3p4io6NpKehhIiFlpqXh4uKfoKApaihb3Fwp6mld25cil40SSohGxcabTYkl1svxqNZt5RMt40/cF00rIZB2aRJmoJVm3Q5rIVCqIdFkWo4fkotKBsdIBgcZTspkV84yG0yymQvl00uqFUus10ypFYvll49uFYsxGMyYkkxrlgnZSQgLhseHBkdPCgesFEzXzkxhkQti0kuZjcmV0Q0dkYnbyQlbDUjh0QnTTMoqEkrWTMtHRscEBgcPiggfEczaTIghDkguZVIfVspmGQueEQji08ovG5Jh0AsjVYheUczRzAlGBkdERkdYzwgQCsiTC0pp00dhk4zakQlcD4kf0stjkk27a1Wk1I3PyYfNigfbkUlFRseGhweGxkcYSQdLB0eMyYjMikiMyUgQiwkRicjjVxEj104MiUgGBseGx4fFxwfExsfFxsfMB4hFRofFhwgFxwgGRwgJyAgHh4gFhsfFRweFRwge6cWfwAAAEpJREFUeJxjZGBk/M/AxAgEDIxgwMuIBmTRBXTRBWzRBXzRBWLRBXLRBWrRBXrRBeaiC6xFF9iLLnAWQ0AATeANiGBggPj9NxsjAEgdCktl3nyYAAAAAElFTkSuQmCC" type="image/x-icon">
+    <style>
+       body,h1{margin:0}.drop,.headLink p{border-radius:5px}.drop p,.drop:hover,.headLink p:hover+.drop{display:block}.drop p,.headLink p{text-decoration:none}.container,.drop{background-color:#fff}.form-container h3,.method div,footer,h1{text-align:center}body{font-family:Arial,sans-serif;padding:0;background-color:#f4f4f4}header{display:flex;justify-content:space-between;align-items:center;background-color:#ffb300;padding:20px}h1{font-family:Roboto,sans-serif;font-size:2em;font-weight:700;background:linear-gradient(to right,#ff5733,#4a3900);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.headLink{display:flex;justify-content:space-around;align-items:center}.headLink p{color:#fff;padding:10px 20px;margin:0 10px}.headLink p:hover{background-color:#9c7300}.drop{position:absolute;display:none;box-shadow:0 2px 8px rgba(0,0,0,.2);z-index:1;padding:10px;margin-top:100px}.drop p{margin:5px 0;color:#007bff;padding:5px}.drop p:hover{background-color:#fc0;border:1px solid #f79000;color:#fff}.method .bank,.method .card{border-radius:10px;padding:10px}@media (max-width:420px){.headLink{flex-direction:column;align-items:flex-start}.headLink p{margin:5px 0}.drop.about{margin-top:50px}.drop.download{margin-top:120px}.drop.support{margin-top:220px}}@media (min-width:421px){.headLink{flex-direction:row}header{justify-content:center}.drop.about{margin-right:300px}.drop.download{margin-left:30px}.drop.support{margin-left:300px}}.container{max-width:1200px;margin:20px auto;padding:20px;box-shadow:0 0 10px rgba(0,0,0,.1)}.register-button,.restore-button{display:inline-block;padding:10px 20px;text-decoration:none;margin-top:20px;border-radius:5px;transition:.3s;cursor:pointer;color:#fff}.restore-button{background-color:#b42efc}.register-button{background-color:#28a745}.method .bank:hover,.method .card:hover,.register-button:hover,.restore-button:hover{filter:brightness(.8)}.form-container{display:none;margin-top:20px;padding:20px;background-color:#e9ecef;border-radius:5px}.form-container .method{display:grid;grid-template-columns:50%;grid-auto-flow:column;width:100%}.method .card{background:#23ff4b;transition:.3s;cursor:pointer}.method .bank{color:#fff;background:#ff2370;transition:.3s;cursor:pointer}.form-container input{margin-bottom:10px;padding:10px;width:90%;border:1px solid #ccc;border-radius:5px}.form-container select{margin-bottom:10px;padding:10px;width:100%;border:1px solid #ccc;border-radius:5px}.form-container button{padding:10px;background-color:#007bff;color:#fff;border:none;border-radius:5px;cursor:pointer}.form-container button:hover{background-color:#0056b3}footer{background-color:#333;color:#fff;padding:10px 0;position:fixed;width:100%;bottom:0}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ngọc Rồng Night</h1>
+    <div class="headLink">
+        <p>Giới thiệu</p>
+        <div class="drop about">
+            <p id="a0">Giới thiệu chung</p>
+            <p id="a1">Lối chơi của game</p>
+            <p id="a2">Hướng dẫn cày vàng</p>
+        </div>
+        <p>Tải game</p>
+        <div class="drop download">
+            <p id="downloadPc">Phiên bản Windows</p>
+            <p id="downloadIpa">Phiên bản iPhone</p>
+            <p id="downloadApk">Phiên bản Android</p>
+        </div>
+        <p>Hỗ trợ</p>
+        <div class="drop support">
+            <p id="linkZalo">Zalo chat box</p>
+            <p id="a3">Hỗ trợ nạp thẻ</p>
+            <p id="a4">Hỗ trợ nhiệm vụ</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Chào mừng bạn đến với Ngọc Rồng Online máy chủ Night</h2>
+    <p class="register-button" onclick="toggleForm('register')">Đăng ký</p>
+    <p class="restore-button" onclick="toggleForm('restore')">Quên mật khẩu</p>
+
+    <div id="formContainer" class="form-container">
+
+        <div id="registerForm" style="display:none;">
+            <h3>Đăng Ký</h3>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <input type="reepassword" placeholder="Nhập lại mật khẩu" required>
+            <input type="email" placeholder="Gmail khôi phục" required>
+            <br>
+            <button onclick="submitForm('register')">Đăng Ký</button>
+            <button onclick="toggleForm('')">Đóng</button>
+        </div>
+
+        <div id="restoreForm" style="display:none;">
+            <h3>Khôi phục tài khoản</h3>
+            <input type="text" id="username" placeholder="Tên đăng nhập" required>
+            <input type="email" id="gmail" placeholder="Gmail khôi phục" required>
+            <br>
+            <label id="captcha" for="captchaInput"></label>
+            <input type="text" id="captchaInput" placeholder="Nhập kết quả" required><br><br>
+            <button onclick="submitForm('restore')">Khôi phục</button>
+            <button onclick="toggleForm('')">Đóng</button>
+        </div>
+        
+        <div id="aboutForm" style="display:none;">
+            <h3 id="aboutHead">Hướng dẫn</h3>
+            <p id="aboutContent">Đây là một hướng dẫn</p>
+            <br>
+            <button onclick="toggleForm('')">Đóng</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Nro Night Server</p>
+</footer>
+
+<script>
+    const simpleToast=function(){var t=document.createElement("style");t.innerHTML=`
+            #toast-container {
+                position: fixed;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 100;
+            }
+            .toast {-0
+                min-width: 250px;
+                margin-bottom: 10px;
+                background-color: #f2f2f7;
+                color: #000;
+                text-align: center;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 17px;
+                border: 1px solid #007aff;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+        `,document.head.appendChild(t);const i=document.createElement("div");return i.id="toast-container",document.body.appendChild(i),{show:function(t,n=2e3){const e=document.createElement("div");e.className="toast",e.innerHTML=t,i.appendChild(e),setTimeout(function(){e.style.visibility="visible",e.style.opacity="1"},100),setTimeout(function(){e.style.opacity="0",setTimeout(function(){i.removeChild(e)},500)},n+500)}}}(),formContainer=document.getElementById("formContainer");var aboutForm=document.getElementById("aboutForm"),aboutHead=document.getElementById("aboutHead"),aboutContent=document.getElementById("aboutContent"),registerForm=document.getElementById("registerForm"),restoreForm=document.getElementById("restoreForm"),num1=Math.floor(100*Math.random()),num2=Math.floor(100*Math.random());function toggleForm(t){"register"===t?simpleToast.show("Có thể đăng ký tài khoản trực tiếp trong game!"):(formContainer.style.display="block","restore"===t?(document.getElementById("captcha").textContent=num1+` + ${num2} bằng bao nhiêu?`,aboutForm.style.display="none",registerForm.style.display="none",restoreForm.style.display="block"):(formContainer.style.display="none",registerForm.style.display="none",restoreForm.style.display="none",aboutForm.style.display="none",num1=Math.floor(100*Math.random()),num2=Math.floor(100*Math.random()),document.querySelectorAll("input").forEach(t=>{t.value=""})))}function submitForm(t){switch(t){case"register":break;case"restore":var n=document.getElementById("username"),e=document.getElementById("gmail");if(0==n.value.trim().length||0==e.value.trim().length)return void simpleToast.show("Hãy điền Tên đăng nhập và Gmail");if(!n.value.match(/^[a-z0-9@]{4,18}$/))return void simpleToast.show("Tên đăng nhập không chính xác!");if("0"==e.value)return void simpleToast.show("Không thể khôi phục tài khoản này");if("0"!=e.value&&!e.value.match(/^[a-zA-Z0-9._%+-]+@gmail.com$/))return void simpleToast.show("Gmail khôi phục không chính xác!");var i=parseInt(document.getElementById("captchaInput").value);if(!i)return void simpleToast.show("Hãy nhập kết quả của phép tính trên để tiếp tục!",3e3);if(i!=num1+num2)return simpleToast.show("Xác minh thất bại"),document.getElementById("captchaInput").value="",n.value="",e.value="",num1=Math.floor(100*Math.random()),num2=Math.floor(100*Math.random()),void(document.getElementById("captcha").textContent=num1+` + ${num2} bằng bao nhiêu?`);i={action:"Restore",Basic:btoa(n+":"+e)};fetch("http://13.228.56.4:8080/post",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Restore"},body:JSON.stringify(i)}).then(t=>t.ok?t.text():401==t.status?void simpleToast.show("Tên đăng nhập hoặc Gmail không chính xác"):429==t.status?void simpleToast.show("Máy chủ quá tải, hãy thử lại sau vài giây"):void simpleToast.show("Có lỗi xảy ra: "+t.status)).then(t=>{"success"==t&&simpleToast.show("Một mật khẩu mới vừa được gửi đến Gmail của bạn!",5e3)}).catch(t=>{simpleToast.show("Có lỗi xảy ra: "+t.message)})}toggleForm("")}document.getElementById("downloadPc").addEventListener("click",t=>{window.open("https://www.mediafire.com/file/wxjqgrn2mj47qew/NroNight.rar/file","_blank")}),document.getElementById("downloadIpa").addEventListener("click",t=>{simpleToast.show("Chưa có sẵn phiên bản cho iOS")}),document.getElementById("downloadApk").addEventListener("click",t=>{window.open("https://www.mediafire.com/file/o5dxzj5xktg70vs/NroNight_Mod_Koi.apk/file","_blank")}),document.getElementById("linkZalo").addEventListener("click",t=>{}),document.getElementById("a0").addEventListener("click",t=>{formContainer.style.display="block",registerForm.style.display="none",restoreForm.style.display="none",aboutForm.style.display="block",aboutHead.textContent="Sơ lược về Ngọc Rồng Night",aboutContent.innerHTML=`<div class="bg-content">
+Ngọc Rồng Online<br>
+Game nhập vai trực tuyến với cốt truyện và nhân vật dựa trên bộ truyện tranh nổi tiếng Nhật Bản Dragon Ball đã từng làm say lòng bao nhiêu thế hệ độc giả Việt Nam. Bạn sẽ chọn theo hành tinh nào, Trái Đất, Na mếc hay Xay da? Cuộc hành trình tìm kiếm ngọc rồng và chống kẻ hung ác sẽ bắt đầu nằm trong tay bạn.<br>
+Cùng với sự hướng dẫn của các bậc tiền bối và sự nỗ lực của bản thân, bạn có thể đạt đến sức mạnh kinh hoàng, trở thành những chiến binh siêu hạng. Ngoài ra bạn sẽ không phải chiến đấu đơn độc khi xung quanh bạn là những chiến binh cùng chí hướng, cùng hỗ trợ lẫn nhau đối đầu với các thế lực hắc ám.<br>
+Ngọc Rồng là trò chơi trực tuyến đa nền tảng. Bạn có thể chơi được trên máy tính PC Windows, iPhone, Các dòng máy chạy hệ điều hành Android, Windows Phone, và có cả bản Java chạy trên S40, S60 cũ của Nokia. Với chất lượng cao và tốc độ mượt mà trên các loại đường truyền mạng ADSL, 3G, GPRS.<br>
+Trò chơi thích hợp với mọi lứa tuổi. Điều khiển trực tiếp nhân vật rất dễ dàng trên màn hình cảm ứng. Khi chơi trên PC bạn chỉ cần dùng chuột, hoặc linh hoạt điều khiển nhân vật với bàn phím cứng điện thoại Nokia S40, S60 cũ
+</div>`}),document.getElementById("a1").addEventListener("click",t=>{formContainer.style.display="block",registerForm.style.display="none",restoreForm.style.display="none",aboutForm.style.display="block",aboutHead.textContent="Danh sách kỹ năng",aboutContent.innerHTML=`<div class="bg-content">
+<p style="text-align: center;">
+<img alt src="https://ngocrongonline.com/gif/gif_supber_kame.gif" />
+</p>
+<p style="text-align: center;margin-top: -10px;">Supper Kamejoko</p>
+<p style="text-align: center;margin-top: -10px;">Mô tả: Tấn công từ xa</p>
+<p style="text-align: center;">
+<img alt src="https://ngocrongonline.com/gif//gif_gif_Saiyain.gif" />
+</p>
+<p style="text-align: center;margin-top: -10px;">Liên hoàn chưởng</p>
+<p style="text-align: center;margin-top: -10px;">Mô tả: Tấn công từ xa</p>
+<p style="text-align: center;">
+<img alt src="https://ngocrongonline.com/gif//gif_maphongba.gif" />
+</p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u Ma phong ba</p>
+<p style="text-align: center;margin-top: -10px;">Mô tả: Trói mọi người lại</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/TD_Danhthuong.gif" style="height:96px; width:102px" /></p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u đấm Dragon</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Tấn c&ocirc;ng cận chiến</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/TD_Kame.gif" style="height:106px; width:112px" /></p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u Kamejoko</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Đ&aacute;nh xa nhờ năng lượng</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/Namec_Danhthuong.gif" /></p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u đấm Demon</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Tấn c&ocirc;ng cận chiến</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/Namec_kame.gif" style="height:94px; width:102px" /></p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u Masenko</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Đ&aacute;nh xa nhờ năng lượng</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/XayDa_DanhThuong.gif" style="height:100px; width:100px" /></p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u đấm Galick</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Tấn c&ocirc;ng cận chiến</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/XD_Kame.gif" style="height:86px; width:112px" /></p>
+<p style="text-align: center;margin-top: -10px;">Chi&ecirc;u Antomic</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Đ&aacute;nh xa nhờ năng lượng</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/TD_TDHS.gif" style="height:88px; width:98px" /></p>
+<p style="text-align: center;margin-top: -10px;">Th&aacute;i Dương Hạ San</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: L&agrave;m ch&oacute;i mắt đối phương</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/Namec_hoisinh.gif" style="height:84px; text-align:center; width:96px" /></p>
+<p style="text-align: center;margin-top: -10px;">Trị thương</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Phục hồi HP KI cho bộ đồng đội</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/xayda_taitaonangluong.gif" style="height:86px; width:98px" /></p>
+<p style="text-align: center;margin-top: -10px;">T&aacute;i tạo năng lượng</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: T&aacute;i tạo lại HP v&agrave; MP đang c&oacute;</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/TD_kaioshen.gif" style="height:90px; width:98px" /></p>
+<p style="text-align: center;margin-top: -10px;">Kaioken</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Tấn c&ocirc;ng cận chiến, mức s&aacute;t thương lớn</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/Traidat_kenhkhi.gif" style="height:97px; width:100px" /></p>
+<p style="text-align: center;margin-top: -10px;">Quả cầu k&ecirc;nh khi</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Quả cầu năng lượng c&oacute; mức s&aacute;t thương cực lớn</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/Namec_huydiet.gif" style="height:92px; width:104px" /></p>
+<p style="text-align: center;margin-top: -10px;">Makankosappo</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Chưởng tia lazer xoắn ốc</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/Namec_detrung.gif" style="height:114px; width:120px" /></p>
+<p style="text-align: center;margin-top: -10px;">Đẻ trứng</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: &#272;&#7867; tr&#7913;ng t&#7841;o qu&aacute;i v&#7853;t h&#7895; tr&#7907; t&#7845;n c&ocirc;ng</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/xayda_bienhinh.gif" style="height:94px; width:104px" /></p>
+<p style="text-align: center;margin-top: -10px;">Biến h&igrave;nh</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: Bi&#7871;n h&igrave;nh th&agrave;nh kh&#7881; &#273;&#7897;t, t&#259;ng HP v&agrave; Ch&iacute; m&#7841;ng</p>
+<p style="text-align: center;"><img alt src="https://ngocrongonline.com/gif/xayda_tusat.gif" style="height:92px; width:94px" /></p>
+<p style="text-align: center;margin-top: -10px;">Tự ph&aacute;t nổ</p>
+<p style="text-align: center;margin-top: -10px;">M&ocirc; tả: T&#7921; s&aacute;t v&agrave; g&acirc;y s&aacute;t th&#432;&#417;ng di&#7879;n r&#7897;ng</p>
+<p style="text-align: center;margin-top: -10px;">...</p>
+<p style="text-align: center;margin-top: -10px;">V&agrave; c&ograve;n nhi&#7873;u k&#7929; n&#259;ng kh&aacute;c &#273;ang ch&#7901; c&aacute;c chi&#7871;n binh kh&aacute;m ph&aacute;!</p>
+</div>`}),document.getElementById("a2").addEventListener("click",t=>{formContainer.style.display="block",registerForm.style.display="none",restoreForm.style.display="none",aboutForm.style.display="block",aboutHead.textContent="Hướng dẫn cày vàng",aboutContent.innerHTML=`<div class="bg-content">
+<strong>Tại NPC Bò Mộng ở Rừng Karin:</strong></p>
+<p>Mỗi ngày sẽ reset các nhiệm vụ hàng ngày, nhiệm vụ danh vọng. Khi hoàn thành, các nhân vật có thể được nhận thêm vàng, điểm danh vọng. Có thể dùng điểm danh vọng để mua các vật phẩm hấp dẫn trong cửa hàng</p>
+<p style="text-align:center"><img alt src="https://ngocrongonline.com/images/screen/5-2.png" style="max-width:100%"></p>
+</div>`}),document.getElementById("a3").addEventListener("click",t=>{}),document.getElementById("a4").addEventListener("click",t=>{});
+</script>
+
+</body>
+</html>
